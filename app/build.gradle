@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'mykey'
+            keyPassword 'mykeypassword'
+            storeFile file('D:/Kelas XI/PPB/AndroidStudioProjects/PrivateAssignment/key.jks')
+            storePassword 'mystorepassword'
+        }
+    }
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {

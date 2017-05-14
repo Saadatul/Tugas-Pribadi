@@ -20,8 +20,10 @@
 
             <ImageView
                 android:id="@+id/imageViewOtof"
-                android:layout_width="340dp"
-                android:layout_height="340dp" />
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
 
             <TextView
                 android:id="@+id/textViewHead"
